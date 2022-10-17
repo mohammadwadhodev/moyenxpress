@@ -22,7 +22,7 @@ class SplashScreenController extends GetxController{
      SharedPreferences prfs = await SharedPreferences.getInstance();
      String? isUser = prfs.getString("isUser");
      String? email = prfs.getString("email");
-     String? password = prfs.getString("password");
+       String? password = prfs.getString("password");
      if(isUser == "true"){
        print("splash url https://moyenxpress.com/loginForWeb?email=$email&password=$password}");
        Get.offAllNamed(kWebViewScreen,arguments: 'https://moyenxpress.com/loginForWeb?email=${email}&password=${password}');
